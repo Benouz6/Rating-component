@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+}
+main {
+  background-color: hsl(216, 2%, 2%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Overpass;
+}
+
+.card {
+  width: 12rem;
+  background-color: #1F252F;
+  padding: 1.1rem;
+  border-radius: 1rem;
+}
+
+.star {
+  background-color: hsl(213, 19%, 18%);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-bottom: .7rem;
+}
+
+.star img {
+  width: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: .4rem;
+}
+
+.text {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: .78rem;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  border: none;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: .6rem .75rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.btn:active {
+  color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.submit-button {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-size: 8px;
+  border: none;
+  display:block;
+  width: 100%;
+  padding: .47rem;
+  border-radius: 2rem;
+  font-family: Overpass;
+  letter-spacing: .06rem;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.submit-button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.active {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: absolute;
+  text-align: center;
+}
+
+.image-card {
+  display: flex;
+  justify-content: center;
+  margin: 1rem
+}
+
+.image-card img {
+  width: 6rem;
+}
+
+.modal-rating {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  font-size: 9px;
+  padding: .4rem 1rem;
+  margin: 0 auto 1.4rem;
+  border-radius: 1rem;
+  opacity: .8;
+  display: inline-block;
+  text-align: center;
+}
+
+.modal-rating p {
+  font-size: 9px;
+}
+ .center {
+  text-align: center;
+ }
+
+ .text {
+  font-size: 8.5px;
+ }
+@media screen and (max-width: 375px) {
+  .card {
+    width: 80%;
+    padding: 1.5rem;
+  }
+  .btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .submit-button{
+    font-size: 12px;
+    padding: .6rem;
+  }
+  .title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .text {
+    font-size: 13px;
+    line-height: 1.3rem;
+    margin-bottom: .5rem;
+  }
+
+}
