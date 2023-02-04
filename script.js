@@ -1,6 +1,5 @@
 const btns = document.getElementsByClassName("btn");
 const rate = document.getElementById('rate')
-// let note;
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function () {
@@ -18,6 +17,4 @@ function submit() {
   const rates = document.getElementById('rates');
   modal.classList.toggle('modal');
   rates.classList.toggle('modal');
-  modal.addEventListener('click', function () {
-  })
 };

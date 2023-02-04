@@ -13,9 +13,9 @@ main {
 }
 
 .card {
-  width: 12rem;
+  width: 16rem;
   background-color: #1F252F;
-  padding: 1.1rem;
+  padding: 1.3rem;
   border-radius: 1rem;
 }
 
@@ -24,11 +24,11 @@ main {
   display: inline-block;
   padding: 0.5rem;
   border-radius: 50%;
-  margin-bottom: .7rem;
+  margin-bottom: .9rem;
 }
 
 .star img {
-  width: .7rem;
+  width: .9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,41 +36,53 @@ main {
 
 .title {
   color: hsl(0, 0%, 100%);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: .4rem;
+  margin-bottom: .6rem;
 }
 
 .text {
   color: hsl(217, 12%, 63%);
   font-weight: 400;
-  font-size: 8px;
-  line-height: .78rem;
+  font-size: 11px;
+  line-height: 1rem;
 }
-.buttons {
+
+.form-container {
   display: flex;
   justify-content: space-between;
+  margin: 1.9rem 0;
+}
+/* .buttons {
+  display: flex;
+  justify-content: space-between;
+} */
+
+fieldset {
+  display: none;
 }
 
-.btn {
+input[type='radio'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+}
+
+input[type='radio'] + label {
   background-color: hsl(213, 19%, 18%);
-  color: hsl(217, 12%, 63%);
-  border: none;
-  border-radius: 50%;
-  font-size: 10px;
-  padding: .6rem .75rem;
-  margin: 1rem 0;
+  padding: .69rem .9rem;
+  border-radius: 3.5rem;
   cursor: pointer;
-  transition: .6s;
+  transition: .3s;
 }
 
-.btn:hover {
+input[type="radio"]+label:is(:hover, :focus-visible) {
   background-color: hsl(25, 97%, 53%);
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
-.btn:active {
-  color: hsl(217, 12%, 63%);
+input[type="radio"]:focus+label {
+  background: hsl(217, 12%, 63%);
   color: white;
 }
 
@@ -81,7 +93,7 @@ main {
   border: none;
   display:block;
   width: 100%;
-  padding: .47rem;
+  padding: .6rem;
   border-radius: 2rem;
   font-family: Overpass;
   letter-spacing: .06rem;
@@ -134,10 +146,6 @@ main {
 }
  .center {
   text-align: center;
- }
-
- .text {
-  font-size: 8.5px;
  }
 @media screen and (max-width: 375px) {
   .card {
