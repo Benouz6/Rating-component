@@ -12,6 +12,10 @@ main {
   font-family: Overpass;
 }
 
+.display-hidden {
+  display: none;
+}
+
 .card {
   width: 16rem;
   background-color: #1F252F;
